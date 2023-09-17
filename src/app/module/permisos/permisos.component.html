@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGUER MIDDLE EARTH</title>
+    <link rel="icon" type="img/jpg" href="/img/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script:regular" rel="stylesheet" />
+    <style>
+        :root{
+            --negro:#000;
+            --blanco: #fff;
+            --amarillo: rgb(238, 238, 53);
+            --rojo: rgb(215, 10, 10);
+            --naranja: rgb(235, 167, 40);
+            --lila: rgb(120, 120, 230);
+            --verde: rgb(238, 238, 53);
+        }
+        *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: var(--negro);
+        font-family:Arial, Helvetica, sans-serif;
+        color: var(--blanco);
+        }
+        .container{
+            width: 80%;
+            max-width: 1200px;
+            height: 50%;
+            margin: 50px auto;
+            padding:40px;
+            border: 2px dashed var(--blanco);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .caja1{
+            width:50%;
+            text-align: center;
+        }
+        .logotipo{
+            width: 40%;
+        }
+        .caja2{
+            width:50%;
+        }
+        .caja2 h2{
+            text-align: center;
+            font-family: "kaushan script";
+            font-size: 1vman;
+        }
+        @media screen and (max-width: 500px){
+            .container{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+        } 
+        .permiso{
+            width: 80%;
+            max-width: 1200px;
+            height: 20%;
+            margin: 50px auto;
+            padding:40px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .botones{
+            background-color: var(--blanco);
+            max-width: 1200px;
+            color: var(--negro);
+            padding: 10px;
+            border: 2px solid var(--naranja);
+            text-decoration: none;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .botones:hover{
+            cursor: pointer;
+            background-color: var(--rojo);
+            color: var(--blanco);
+            font-size: 1.5vw;
+        }
+        @media screen and (max-width: 700px) {
+            .permiso{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+    <router-outlet></router-outlet>
+</head>
+<body>
+    <div class="container">
+        <div class="caja1">
+            <img class="logotipo" src="/img/logo.png">
+        </div>
+        <div class="caja2">
+            <h2>Donde comer será toda una aventura &hearts;</h2>
+            <br>
+            <h2>¡BIENVENIDOS! ACCEDA SEGUN SU ROL</h2>
+        </div>
+    </div>
+    <div class="permiso">
+        <a class="botones" target="_blank" href="http://127.0.0.1:5500/src/app/module/administrador/administrador.component.html">ADMINISTRACIÓN</a>
+        <a class="botones" target="_blank" href="http://127.0.0.1:5500/src/app/module/usuario/usuario.component.html">USUARIO</a>
+        <a class="botones" target="_blank" href="http://127.0.0.1:5500/src/app/module/compra/compra.component.html">COMPRA</a>
+        <a class="botones" target="_blank" href="http://127.0.0.1:5500/src/app/module/gestion-logistica/gestion-logistica.component.html">GESTIÓN LOGISTICA</a>
+        <a class="botones" target="_blank" href="http://127.0.0.1:5500/src/app/module/entrega/entrega.component.html">ENTREGA</a>
+        <a class="botones" target="_blank" href="http://127.0.0.1:5500/src/app/module/login/login.component.html">REGRESAR A INICIO</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGUER MIDDLE EARTH</title>
+    <link rel="icon" type="img/jpg" href="/img/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script:regular" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <router-outlet></router-outlet>
+</head>
+ <body>
+    <header class="p-3 mb-3 border-bottom bg-dark">
+        <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img src="/img/logo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary text-light">INICIO</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark text-light">MENÚ</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark text-light">ESCOGE TU PRODUTCO</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark text-light">SIGUE TU PRODUCTO</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark text-light">TIEMPO DE ENTREGA</a></li>
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" class="form-control" placeholder="Buscar..." aria-label="Buscar">
+        </form>
+        <div class="dropdown text-end">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+        <li><a class="dropdown-item text-dark" href="#">Actualizar Mis Datos</a></li>
+        <li><a class="dropdown-item text-dark" href="#">Configurar Mi Perfil</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item text-dark" href="#">Cerrar sesión</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+    </header>
+
+
+    <div class="accordion px-5 m-5" width="200px" id="accordionExample">
+      <div class="accordion-item text-center">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            ENTRADAS
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="container text-center">
+              <div class="row row-col-lg-4 col-12">
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">ENTRADA 1</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/entrada.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">ENTRADA 2</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/entrada.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">ENTRADA 3</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/entrada.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">ENTRADA 4</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/entrada.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            DESGRANADOS
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="container text-center">
+              <div class="row row-col-lg-4 col-12">
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">DESGRANADOS 1</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/desgranados.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">DESGRANADOS 2</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/desgranados.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">DESGRANADOS 3</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/desgranados.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">DESGRANADOS 4</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/desgranados.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            BURGERS
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="container text-center">
+              <div class="row row-col-lg-4 col-12">
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">BURGUER 1</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA12.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">BURGUER 2</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA12.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">BURGUER 3</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA12.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">BURGUER 4</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA12.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            HOT DOGS
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="container text-center">
+              <div class="row row-col-lg-4 col-12">
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">HOT DOG 1</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA5.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">HOT DOG 2</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA5.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">HOT DOG 3</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA5.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">HOT DOG 4</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA5.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            PIZZAS
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="container text-center">
+              <div class="row row-col-lg-4 col-12">
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">PIZZA 1</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA3.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">PIZZA 2</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA3.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">PIZZA 3</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA3.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">PIZZA 4</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/COMIDARAPIDA3.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            ACOMPAÑANTES
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="container text-center">
+              <div class="row row-col-lg-4 col-12">
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">ACOMPAÑANTE 1</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/acompañante.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">ACOMPAÑANTE 2</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/acompañante.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">ACOMPAÑANTE 3</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/acompañante.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">ACOMPAÑANTE 4</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/acompañante.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            POSTRES
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="container text-center">
+              <div class="row row-col-lg-4 col-12">
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">POSTRE 1</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/postre.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">POSTRE 2</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/postre.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">POSTRE 3</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/postre.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">POSTRE 4</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/postre.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            MALTEADAS
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="container text-center">
+              <div class="row row-col-lg-4 col-12">
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MALTEADA 1</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/malteada.png" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MALTEADA 2</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/malteada.png" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MALTEADA 3</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/malteada.png" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MALTEADA 4</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/malteada.png" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            BEBIDAS
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="container text-center">
+              <div class="row row-col-lg-4 col-12">
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">BEBIDA 1</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/bebida.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">BEBIDA 2</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/bebida.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">BEBIDA 3</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/bebida.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">BEBIDA 4</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/bebida.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            MENU KIDS
+          </button>
+        </h2>
+        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="container text-center">
+              <div class="row row-col-lg-4 col-12">
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MENU KID 1</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/infantil.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MENU KID 2</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/infantil.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MENU KID 3</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/infantil.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center" style="width: 16rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">MENU KID 4</h5>
+                      <p class="card-text">PRECIO: $ 1</p>
+                      <div class="container">
+                        <img src="/img/infantil.jpg" class="img-fluid" width="200px">
+                      </div>
+                      <a href="#" class="btn btn-success">COMPRAR</a>
+                      <a href="#" class="btn btn-danger">CANCELAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container bg-dark w-auto p-2 mt-3" width:100%>
+        <footer class="py-5 text-light">
+        <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+        <h5>ENLACES DE INTERES</h5>
+        <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Novedades</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Promociones</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Reservas</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Experiencias de usuarios</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Preguntas frecuentes</a></li>
+        </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-3">
+        <h5>ENLACES LEGALES</h5>
+        <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Politica de cookies</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Politica de uso y tratamiento de datos personales</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Terminos y condiciones</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Facturación electrónica</a></li>
+        </ul>
+        </div>
+        <div class="col-1 col-md-2 mb-3">
+            <img src="/img/logo.png" class="img-fluid">
+        </div>
+        <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+        <h5>TRABAJA EN BURGUER MIDDLE EARTH</h5>
+        <p>Si estas interesado en trabajar con nosostros envianos tu correo.</p>
+        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+        <label for="newsletter1" class="visually-hidden">Correo electrónico</label>
+        <input id="newsletter1" type="text" class="form-control" placeholder="Direccion de correo electronico">
+        <button class="btn btn-primary" type="button">Enviar</button>
+        </div>
+        </form>
+        </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2023 Innovations Solution Company, Inc. Reservados todos los derechos.</p>
+        <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-tiktok fs-2 text-light"></i></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram fs-2 text-light"></i></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook fs-2 text-light"></i></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-whatsapp fs-2 text-light"></i></a></li>
+        </ul>
+        </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
