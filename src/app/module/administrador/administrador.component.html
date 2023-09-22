@@ -1,1 +1,167 @@
-<p>administrador works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGUER MIDDLE EARTH</title>
+    <link rel="icon" type="img/jpg" href="/img/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script:regular" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <router-outlet></router-outlet>
+</head>
+<body>
+    <header class="p-3 mb-3 border-bottom bg-dark">
+        <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img src="/img/logo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary text-light">INICIO</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark text-light">MENÚ</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark text-light">REPORTES GUARDADOS</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark text-light">ESTADISTICAS</a></li>
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" class="form-control" placeholder="Buscar..." aria-label="Buscar">
+        </form>
+        
+        </div>
+        </div>
+    </header>
+    
+    <div class="container-fluid">
+        <div class="column">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                VER MENÚ DESPLEGABLE
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">BIENVENIDO AL MODULO ADMINISTRADOR</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <nav class="sidebar sidebar-expand-md bg-light">
+                        <div class="position-sticky pt-3">
+                            <ul class="nav flex-column">
+                                <i class="bi bi-bar-chart-line-fill"></i><h5>REPORTES</h5>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        REPORTE DE VENTAS
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        REPORTE DE INVENTARIO
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        REPORTE DE CANCELACIONES
+                                    </a>
+                                </li>
+                                <i class="bi bi-gear"></i><h5>CONFIGURACIÓN DEL REPORTE</h5>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        DIARIO
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        SEMANAL
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        SEMESTRAL
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        ANUAL
+                                </a>
+                                </li>
+                                <i class="bi bi-file-earmark-arrow-down-fill"></i><h5>DESCARGAS</h5>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        PDF
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        EXCEL
+                                    </a>
+                                </li>
+                                <i class="bi bi-pencil-fill"></i><h5>EDITAR USUARIOS Y PRODUCTOS</h5>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        MODIFICAR PRODUCTOS
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        MODIFICAR USUARIOS
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr>
+                            <ul class="nav flex-column mb-2">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-question-circle"></i>
+                                        Soporte
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-x-circle"></i>
+                                        Salir
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+              </div>
+
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand"></div>
+                    <div class="chartjs-size-monitor-shrink"></div> 
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">Dashboard</h1>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group me-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Compartir</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Exportar</button>
+                </div>
+                <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                <i class="bi bi-calendar"></i>
+                Esta semana
+                </button>
+                </div>
+                </div>	
+                <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="1071" height="451" style="display: block; height: 361px; width: 857px;"></canvas>
+            </main>
+        </div>
+    </div>
+
+    <div class="container mt-3 bg-dark w-auto">
+        <footer class="py-5 text-light">
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2023 Innovations Solution Company, Inc. Reservados todos los derechos.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-tiktok fs-2 text-light"></i></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram fs-2 text-light"></i></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook fs-2 text-light"></i></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-whatsapp fs-2 text-light"></i></a></li>
+            </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
